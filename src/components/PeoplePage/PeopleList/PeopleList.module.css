@@ -1,0 +1,24 @@
+.list__container{
+    display: flex;
+    list-style-type: none;
+   flex-wrap: wrap;
+}
+.list__item{
+    width: 190px;
+    margin: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    background-color: var(--color-white);
+    cursor: pointer;
+    overflow: hidden;
+}
+.list__item a{
+    text-decoration: none;
+    color: var(--color-black);
+    text-align: center;
+}
+.person__img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top center;
+}

@@ -1,0 +1,70 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-dark-gray: #010101;
+    --color-yellow: #ffff00;
+    --color-blue: #6a83fb;
+    --color-violet: #ae72c2;
+    --color-red: #f75d83;
+
+    --width-max: 1200px;
+
+   
+   --spacing-lg: 30px;
+   --spacing-md: 20px;
+   --spacing-sm: 10px;
+   --spacing-xs: 5px;
+
+   --margin-list: 7px;
+
+   --transition: 0.4s;
+
+   --font-family-main: "Arial", sans-serif;;
+   --font-bold: 600;
+   --font-size-main: 16px;
+   --font-size-subheader: 18px;
+   --font-size-header: 26px;
+
+   --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-yellow);
+   --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
+
+    --border-radius-sm: 3px;
+    --border-radius-md: 5px;
+    --border-radius-lg: 10px;
+
+    /* THEMES */
+    --theme-light-header: #dfe2df;
+    --theme-dark-header: #ca6c6f;
+    --theme-neitral-header: #cccc46;
+    --theme-default-header: var(--theme-neitral-header);
+
+
+    --theme-light-bgimage: radial-gradient(circle, rgba(129,64,119,1) 0%, rgba(0,0,0,1) 100%);
+    --theme-dark-bgimage: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgb(17, 96, 50) 47%, rgba(3,14,17,1) 100%);
+    --theme-neitral-bgimage: url(@static/bg.jpg);
+    --theme-default-bgimage: var( --theme-neitral-bgimage);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
+  color: var(--color-white);
+  background-color: var(--color-dark-gray);
+  background-image: var(--theme-default-bgimage);
+  background-size: cover;
+  background-attachment: fixed;
+}
+img{
+    display: block;
+}
+.title {
+    line-height: 1.7;
+    font-size: var(--font-size-header);
+    text-shadow: 0 0 2px var(--color-black);
+    color: var(--theme-default-header);
+    transition: color var(--transition)
+}
+
+

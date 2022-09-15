@@ -1,0 +1,16 @@
+:root{
+    --font-size-sm: 14px;
+    --font-size-md: 18px;
+    --font-family-name: 'Arial', sans-serif;
+    --font-bold: 600;
+
+    --border-radius-sm: 3px;
+
+    --color-white: #fff;
+    --color-gray: #9c9c9c;
+    --color-lightgray: #d0d0d0;
+    --color-black: #000;
+    --color-blue: #6a83fd;
+
+    --transition: 0.4s;
+}

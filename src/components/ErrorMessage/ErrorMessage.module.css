@@ -1,0 +1,19 @@
+.text{
+    max-width: 600px;
+    margin: 100px auto 0;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-yellow);
+    font-size: var(--font-size-header);
+    text-shadow: 0 0 2px var(--color-white);
+    -webkit-text-stroke-color: var(--color-yellow);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-fill-color: transparent;
+}
+.video{
+    display: block;
+    margin: var(--spacing-md) auto;
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--text-shadow-yellow);
+    width: 400px
+}
