@@ -1,5 +1,5 @@
 {
-    "name": "react-star-wars",
+    "name": "star-wars",
     "version": "0.1.0",
     "homepage": "https://novosadinga.github.io/star-wars/",
     "private": true,
@@ -18,11 +18,13 @@
         "redux-thunk": "^2.4.1"
     },
     "scripts": {
+        "deploy": "npm run build && npm run build-storybook && npm run build-gh-pages",
         "start": "react-app-rewired start",
+        "build-storybook": "build-storybook -o ./build/storybook",
         "build": "react-app-rewired build",
         "eject": "react-scripts eject",
         "storybook": "start-storybook -p 6006 -s public",
-        "build-storybook": "build-storybook -s public"
+        "build-gh-pages": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -64,6 +66,7 @@
         "@storybook/react": "^6.5.10",
         "@storybook/testing-library": "^0.0.13",
         "babel-plugin-named-exports-order": "^0.0.2",
+        "gh-pages": "^4.0.0",
         "react-app-rewire-alias": "^1.1.7",
         "react-app-rewired": "^2.2.1",
         "webpack": "^5.74.0"
