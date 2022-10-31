@@ -19,18 +19,19 @@
     margin: 0 10px;
     padding: 7px 10px;
     min-width: 70px;
-    color: var(--color-white);
+    color: var(--theme-default-header);
     text-align: center;
     text-decoration: none;
     font-weight: var(--font-bold);
-    text-shadow: var(--text-shadow-yellow);
+    font-size: var(--font-size-subheader);
+    text-shadow: 0 0 2px var(--color-shadow-neitral);
     transition: var(--transition);
     border: 2px solid transparent;
     border-radius: var(--border-radius-sm);
 }
 .menu :global(a.active){
-    border: 2px solid var(--color-violet);
-    color: var(--color-violet);
+    border: 2px solid var(--theme-default-active);
+    color: var(--theme-default-active);
     text-shadow: none;
 }
 .logo{

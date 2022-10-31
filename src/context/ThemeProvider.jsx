@@ -8,7 +8,7 @@ export const THEME_NEITRAL = 'neitral'
 const ThemeContext = React.createContext()
 
 const ThemeProvider = ({ children, ...props}) =>{
-    const [theme, setTheme] = useState(null)
+    const [theme, setTheme] = useState('neitral')
    
     const change = name =>{
         setTheme(name)

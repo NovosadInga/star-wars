@@ -7,15 +7,17 @@
     width: 190px;
     margin: var(--spacing-md);
     border-radius: var(--border-radius-sm);
-    background-color: var(--color-white);
+    background-color: var(--theme-default-active);
     cursor: pointer;
     overflow: hidden;
 }
 .list__item a{
     text-decoration: none;
-    color: var(--color-black);
+    color: var(--theme-default-header);
     text-align: center;
+    font-weight: var(--font-bold);
 }
+
 .person__img{
     width: 100%;
     height: 260px;

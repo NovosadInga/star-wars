@@ -1,5 +1,6 @@
 .container{
-    width: 35px;
+   
+
     position: relative;
     flex-shrink: 0;
 }
@@ -14,12 +15,22 @@
     height: 20px;
     font-weight: var(--font-bold);
     font-size: 13px;
-    background-color: var(--color-white);
+    background-color: var(--theme-default-header);
     border-radius: 50%;
+    color: var(--theme-default-active)
    
 
 }
 .icon{
-    width: 100%
-    
+    width: 35px;
+    height: 45px;
+}
+.icon_neitral{
+    background: url(./img/neitral.svg) no-repeat  center top/ contain;
+}
+.icon_dark{
+    background: url(./img/dark.svg) no-repeat  center top/ contain;
+}
+.icon_light{
+    background: url(./img/light.svg) no-repeat  center top/ contain;
 }

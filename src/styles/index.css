@@ -20,10 +20,11 @@
    --transition: 0.4s;
 
    --font-family-main: "Arial", sans-serif;;
-   --font-bold: 600;
+   --font-bold: 700;
    --font-size-main: 16px;
-   --font-size-subheader: 18px;
-   --font-size-header: 26px;
+   --font-size-subheader: 20px;
+
+   --font-size-header: 36px;
 
    --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-yellow);
    --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
@@ -33,16 +34,29 @@
     --border-radius-lg: 10px;
 
     /* THEMES */
-    --theme-light-header: #dfe2df;
-    --theme-dark-header: #ca6c6f;
-    --theme-neitral-header: #cccc46;
+    --theme-light-header: #ffffff;
+    --theme-dark-header: #e7c035;
+    --theme-neitral-header: #ffffff;
     --theme-default-header: var(--theme-neitral-header);
 
+    --theme-light-active: #3a8dd9;
+    --theme-dark-active: #ffffff;
+    --theme-neitral-active: #ae72c2;
+    --theme-default-active: var(--theme-neitral-active);
 
-    --theme-light-bgimage: radial-gradient(circle, rgba(129,64,119,1) 0%, rgba(0,0,0,1) 100%);
-    --theme-dark-bgimage: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgb(17, 96, 50) 47%, rgba(3,14,17,1) 100%);
-    --theme-neitral-bgimage: url(@static/bg.jpg);
+
+    --theme-light-bgimage: url(@static/light.jpg);
+    --theme-dark-bgimage: url(@static/dark.jpg);
+    --theme-neitral-bgimage: url(@static/neitral.jpg);
     --theme-default-bgimage: var( --theme-neitral-bgimage);
+
+    --theme-light-shadow:  0 0 2px var(--color-white), 0 0 40px var(--theme-light-active);
+    --theme-dark-shadow:  0 0 2px var(--color-white), 0 0 40px var(--theme-dark-active);
+    --theme-neitral-shadow:  0 0 2px var(--color-white), 0 0 40px var(--theme-neitral-active);
+    --theme-default-shadow: var(--theme-neitral-shadow)
+
+    
+   
 }
 
 body {
@@ -59,10 +73,13 @@ body {
 img{
     display: block;
 }
+*{
+    box-sizing: border-box;
+}
 .title {
     line-height: 1.7;
     font-size: var(--font-size-header);
-    text-shadow: 0 0 2px var(--color-black);
+    text-shadow: var(--theme-default-shadow);
     color: var(--theme-default-header);
     transition: color var(--transition)
 }

@@ -4,7 +4,7 @@ import PersonPage from '@containers/PersonPage';
 import NotFoundPage from '@containers/NotFoundPage';
 import FavoritesPage from '@containers/FavoritesPage';
 import SearchPage from '@containers/SearchPage';
-import ErrorMessage from '@components/ErrorMessage';
+import ErrorPage from '@containers/ErrorPage';
 
 
 const routesConfig = [
@@ -34,7 +34,7 @@ const routesConfig = [
     },
     {
         path: "/fail",
-        element: <ErrorMessage/>
+        element: <ErrorPage/>
     },
     {
         path: "*",

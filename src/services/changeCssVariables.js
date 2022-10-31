@@ -7,7 +7,7 @@
 */
 export const changeCssVariables = theme => {
     const root = document.querySelector(":root")
-    const cssVariables = ['header', 'bgimage']
+    const cssVariables = ['header', 'bgimage', 'active', 'shadow']
     cssVariables.forEach(el =>{
         root.style.setProperty(
             `--theme-default-${el}`, 

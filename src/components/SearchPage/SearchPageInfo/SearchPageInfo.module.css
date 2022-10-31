@@ -1,8 +1,7 @@
 .list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: var(--spacing-sm);
+
     list-style: none;
 }
 .item{
@@ -10,7 +9,7 @@
     margin: var(--spacing-sm);
 }
 .item a{
-    color: var(--color-white);
+    color: var(--theme-default-header);
     text-decoration: none;
     
 }

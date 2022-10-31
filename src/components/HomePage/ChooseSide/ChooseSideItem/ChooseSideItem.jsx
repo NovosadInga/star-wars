@@ -12,7 +12,6 @@ const ChooseSideItem = ({
     img
 }) => {
     const isTheme = useTheme()
-    console.log(classes)
     return <div 
     className={cn(styles.item, styles[classes])}
     onClick={()=> isTheme.change(theme)}

@@ -9,10 +9,10 @@ import ChooseSideItem from '@components/HomePage/ChooseSide/ChooseSideItem';
 const ChooseSide = () =>{
     const choose_side_elements = [
         {
-            classes: 'item_light',
-            theme: THEME_LIGHT,
-            text: "Light Side",
-            img: lightImg
+            classes: 'item_neitral',
+            theme: THEME_NEITRAL,
+            text: "Neitral Side",
+            img: neitralImg
         },
         {
             classes: 'item_dark',
@@ -21,15 +21,14 @@ const ChooseSide = () =>{
             img: darkImg
         },
         {
-            classes: 'item_neitral',
-            theme: THEME_NEITRAL,
-            text: "Neitral Side",
-            img: neitralImg
+            classes: 'item_light',
+            theme: THEME_LIGHT,
+            text: "Light Side",
+            img: lightImg
         }
-    ]
+        ]
     return <div className={styles.container}>
         {choose_side_elements.map(({classes,theme,text,img }) => {
-            console.log(classes)
             return (
                 <ChooseSideItem 
                     key={theme}
